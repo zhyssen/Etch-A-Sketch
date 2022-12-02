@@ -18,13 +18,18 @@
                <div class="content">
                 <div class = "board"></div>
                 <div class = "buttons">
-                    <button>Black</button>
-                    <button>White</button>
-                    <button>Random</button>
-                    <butoon>Reset</butoon>
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('random')">Random</button>
+                    <button onclick="changeColor('White')">Eraser</button>
+                    <button onclick="changeColor('black')">Reset</button>
                 </div>
                 <div>
-                    <input type="text" placeholder="Size of board" value="16"/>
+                    <input 
+                    type="text" 
+                    placeholder="Size of board" 
+                    value="16" 
+                    onchange="changeSize(this.value)"
+                    />
                     <button>Set Size</button>
                 </div>
                 </div>
@@ -32,5 +37,5 @@
             
 
         </body>
-        <script src="app.js">></script>
+        <script src="app.js"></script>
 </html>
